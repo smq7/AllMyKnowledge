@@ -1,0 +1,41 @@
+/* 
+Псевдоэлементы ведут себя сходным образом, однако они действуют так, 
+как если бы вы добавили в разметку целый новый HTML-элемент, а не применили
+ класс к существующим элементам. Псевдоэлементы начинаются с двойного двоеточия ::.
+::pseudo-element-name */
+
+/* Видкривати в браузери*/
+
+article p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}  
+
+
+footer p:first-child::first-line {
+    font-size: 140%;
+    color:aqua;
+    font-weight: bold;
+  }
+
+
+  .box::before {
+    content: "This should show before the other content."
+}   
+.box::after {
+    content: "This should show before the other content. AFTER"
+}   
+
+.box2::after {
+    content: " ➥"
+}   
+
+
+.box3::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}   

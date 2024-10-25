@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;balls.BallTread.java&apos; to &apos;BallThread.java&apos;&#x0D;&#x0A;- Original project: &apos;Balls&apos;&#x0D;&#x0A;- Original element: &apos;balls.BallTread.java&apos;&#x0D;&#x0A;- Renamed element: &apos;balls.BallThread.java&apos;" description="Rename compilation unit &apos;BallTread.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;balls{BallTread.java" name="BallThread.java" references="false" stamp="1698240593114" version="1.0"/>
+</session>

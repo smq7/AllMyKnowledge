@@ -1,0 +1,23 @@
+body {
+    color: green;
+    font-size: 150%;
+}
+          
+.my-class-1 a {
+    color: inherit;
+}
+          
+.my-class-2 a {
+    color: initial;
+}
+          
+.my-class-3 a {
+    color: unset;
+}
+ 
+p {
+    color:initial;
+}
+/* a {
+    color:red;
+} */

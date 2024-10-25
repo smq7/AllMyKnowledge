@@ -1,0 +1,17 @@
+package test;
+
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
+
+public class test2 {
+	public static void main(String[] args) {
+		testInterrupted();
+	}
+	 public static void testInterrupted() throws InterruptedException {
+	        Thread.currentThread().interrupt();
+	                
+	        if (Thread.interrupted()) {
+	            throw new InterruptedException();
+	        }
+	 }
+}

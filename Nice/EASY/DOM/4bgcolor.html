@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input
+      type="button"
+      value="Set paragraph background color"
+      onclick="setBackground()" />
+    <p>hi</p>
+    <p>hello</p>
+  </body>
+  <script>
+    function setBackground() {
+    // now, get all the p elements in the document
+    const paragraphs = document.getElementsByTagName("p");
+
+    // get the second paragraph from the list
+    const secondParagraph = paragraphs[1];
+
+    // set the inline style
+    secondParagraph.style.background = "red";
+    }
+  </script>
+</html>

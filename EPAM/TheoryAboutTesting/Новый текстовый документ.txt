@@ -1,0 +1,4 @@
+List of key definitions
+Requirements levels and types
+Classification by access to application code and architecture
+Simplified testing classification

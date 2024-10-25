@@ -1,0 +1,29 @@
+.wrapper, .wrapper2{
+    display: flex;
+  }
+
+
+  .wrapper2 > div {
+    flex: 1;
+}
+
+.wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+* {
+    margin: 10px 0px;
+}  
+
+div[class*='box']{
+    background-color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 0px 0px;
+}
+

@@ -1,0 +1,40 @@
+<!-- const special = document.querySelectorAll("p.warning, p.note");
+const el = document.querySelector("#main, #basic, #exclamation");
+
+
+querySelector	CSS-selector	✔	-
+querySelectorAll	CSS-selector	✔	-
+getElementById	id	-	-
+getElementsByName	name	-	✔
+getElementsByTagName	tag or '*'	✔	✔
+getElementsByClassName	class
+
+matches
+<script>
+  // может быть любая коллекция вместо document.body.children
+  for (let elem of document.body.children) {
+    if (elem.matches('a[href$="zip"]')) {
+      alert("Ссылка на архив: " + elem.href );
+    }
+  }
+</script>
+
+closest
+<h1>Содержание</h1>
+
+<div class="contents">
+  <ul class="book">
+    <li class="chapter">Глава 1</li>
+    <li class="chapter">Глава 2</li>
+  </ul>
+</div>
+<script>
+  let chapter = document.querySelector('.chapter'); // LI
+
+  alert(chapter.closest('.book')); // UL
+  alert(chapter.closest('.contents')); // DIV
+
+  alert(chapter.closest('h1')); // null (потому что h1 - не предок)
+</script>
+
+-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">Test</button>
+    <script> let btn = document.querySelector('.btn');
+
+        // btn.addEventListener('click', function () {
+        //        alert('Mouse Clicked');
+        // });
+        btn.addEventListener('click', function (e) {
+               console.log(e.clientX)
+        });
+        let clickEvent2 = new MouseEvent("click", {
+            bubbles: true,
+            cancelable: true,
+            clientX: 150,
+            clientY: 150
+        });
+       let clickEvent = new Event('click');
+    //    btn.dispatchEvent(clickEvent);
+    //    btn.dispatchEvent(clickEvent);
+    //    btn.dispatchEvent(clickEvent);
+    //    btn.dispatchEvent(clickEvent);
+    //    btn.dispatchEvent(clickEvent);
+    btn.dispatchEvent(clickEvent2);
+       </script>
+</body>
+</html>

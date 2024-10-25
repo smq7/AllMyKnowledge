@@ -1,0 +1,12 @@
+/*  ций стиль імпортуємо в файл Car.js */
+.bigblue {
+    color: DodgerBlue;
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+.pink{
+    color: palevioletred;
+    text-align: center;
+}

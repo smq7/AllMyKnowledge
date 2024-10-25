@@ -1,0 +1,39 @@
+a[href]{
+    color: blueviolet;
+}
+
+a[href="index.html"] {
+    color:aquamarine;
+}
+
+a:active{
+    color: black;
+}
+
+form :active{
+    color: rgb(119, 156, 33);
+}
+
+input:default {
+    box-shadow: 0 0 2px 1px coral;
+  }
+
+input:default + label {
+    color: coral;
+}
+
+.box:empty {
+    background: lime;
+  }
+
+  .box {
+    background: red;
+    height: 200px;
+    width: 200px;
+  }
+  
+  :root {
+    --main-color: hotpink;
+    --pane-padding: 5px 42px;
+    background-color: rgb(146, 24, 177);
+  }

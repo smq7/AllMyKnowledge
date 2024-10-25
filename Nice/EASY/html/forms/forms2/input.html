@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="text" id="comment" name="comment" value="I'm a text field" />
+    </p>
+    <p>
+        <input type="password" id="pwd" name="pwd" value="Pas"/>
+    </p>
+    <p>
+        <!-- СХОВАНЕ але всеожно передає данні при віправці форми  -->
+        <input type="hidden" id="timestamp" name="timestamp" value="1286705410" />
+    </p>
+    <p>
+        <input type="checkbox" checked id="carrots" name="vegetable" value="carrots" >
+    </p>
+    <!-- якшо в них ожнавеий атрибут name то вони тіп як група і тільки один
+    з них може бути вибраний одночасно -->
+    <fieldset>
+        <legend>What is your favorite meal?</legend>
+        <ul>
+          <li>
+            <label for="soup">Soup</label>
+            <input type="radio" id="soup" name="meal" value="soup" checked />
+          </li>
+          <li>
+            <label for="curry">Curry</label>
+            <input type="radio" id="curry" name="meal" value="curry" />
+          </li>
+          <li>
+            <label for="pizza">Pizza</label>
+            <input type="radio" id="pizza" name="meal" value="pizza" />
+          </li>
+        </ul>
+      </fieldset>
+    <p>
+        <input type="radio" checked id="soup" name="some" value="soup">
+    </p>
+    <p>
+        <!-- фотко-кнопка -->
+        <!--if the image button is used to submit the form, this control doesn't submit its 
+            value — instead, the X and Y coordinates of the click on the image are submitte -->
+        <input type="image" alt="Click me!" src="my-img.png" width="80" height="30" />
+    </p>
+    <p>
+        <input type="file" name="file" id="file" accept="image/*" multiple />
+    </p>
+    <p>
+        <input type="email" id="email" name="email" value="mail" />
+    </p>
+    <p>
+        <input type="search" id="search" name="search" value="Search"/>
+    </p>
+    <p>
+        <input type="tel" id="tel" name="tel" value="TELE"/>
+    </p>
+    <p>
+        <input type="url" id="url" name="url" value="URL"/>
+    </p>
+    <fieldset>
+        <legend>Type number</legend>
+        <p>
+            <input type="number" name="age" id="age" min="1" max="10" step="2" />
+        </p>
+        <p>
+            <input type="number" name="change" id="pennies" min="0" max="1" step="0.01" />
+        </p>
+    </fieldset>
+    <p>
+        <label for="price">Choose a maximum house price: </label>
+        <input
+        type="range"
+        name="price"
+        id="price"
+        min="50000"
+        max="500000"
+        step="100"
+        value="250000" />
+        <output class="price-output" for="price">dsds</output></p>
+
+    <p>
+        <input type="datetime-local" name="datetime" id="datetime" />
+    </p>
+    <p>
+        <input type="color" name="color" id="color" />
+    </p>
+
+    
+</body>
+</html>

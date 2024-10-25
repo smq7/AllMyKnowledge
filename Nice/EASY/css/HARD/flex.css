@@ -1,0 +1,63 @@
+ul.first {
+    display: flex;
+    list-style: none;
+    /*рядок це чи ставпчик буде тре в батьківському елементі делат  */
+    flex-direction: row;
+    
+    /* короткий запис для flex-direction, flex-wrap */
+    /* flex-flow column-reverse wrap */
+}
+
+ul.first li {
+    /* коронкий запис для flex-grow, flex-shrink, flex-basis */
+    /* flex: 1 1 auto */
+    /* встановлює початковий розмір елемента flex */
+    flex-basis: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+} 
+ul.first li.vad {
+    flex-basis: 300px;
+    border: 2px solid blueviolet;
+}
+
+ul.second {
+    display: flex;
+    list-style: none;
+}
+
+ul.second li {
+    /* розтягує ітеми по всьому контейнеру в пропорціях 
+    чим більше число тим більше місця*/
+    flex-grow: 1;
+    background-color: aqua;
+    border: 1px solid black;
+} 
+ul.second li.vad {
+    flex-grow: 2;
+    border: 2px solid blueviolet;
+}
+
+
+ul.three {
+    display: flex;
+    list-style: none;
+    /* тре писати в батькіському елементів чи дозволяти елементам займати більше ніж 
+    одна лінія  */
+    /* flex-wrap: wrap; */
+}
+
+ul.three li {
+    /* якшо тіпа елементи забираєть все місце контейнеру то вони починають зменшуватись
+    в пропорціях в залежності від числа яке стоїть чим більше число тім більше зменшиться */
+    flex-shrink: 1;
+
+    flex-basis: 800px;
+    
+    background-color: aqua;
+    border: 1px solid black;
+} 
+ul.three li.vad {
+    flex-shrink: 2;
+    border: 2px solid blueviolet;
+}

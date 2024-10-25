@@ -1,0 +1,29 @@
+package bowloop;
+
+public class LockFriends {
+    static class Friend {
+        private String name;
+        private Lock lock = new ReentrantLock();
+
+        public Friend(String name) {     this.name = name;      }
+        public String getName() {     return name;     }
+
+        public boolean impendingBow(Friend bower) {
+            Boolean myLock = false;
+            Boolean yourLock = false;
+            try {
+                myLock = lock.tryLock(); //true if lock was acquired
+                yourLock = bower.lock.tryLock(); //true if lock was acquired
+            } finally {
+                if (!(myLock && yourLock)) {
+                    if (myLock) {
+                        lock.unlock(); // release this lock
+                    }
+                    if (yourLock) {
+                        bower.lock.unlock();
+                    }
+                }
+            }
+            return myLock && yourLock;
+        }
+

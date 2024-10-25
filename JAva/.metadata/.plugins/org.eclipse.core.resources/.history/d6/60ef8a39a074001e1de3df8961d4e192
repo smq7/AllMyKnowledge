@@ -1,0 +1,12 @@
+package bankpool;
+
+
+public class BankMain {
+	public static final int NACCOUNTS = 10;
+    public static final int INITIAL_BALANCE = 10000;
+   
+    public static void main(String[] args) {
+        Bank b = new Bank(NACCOUNTS, INITIAL_BALANCE);
+        System.out.print(1000 * Math.random()/1000); 
+    }
+}

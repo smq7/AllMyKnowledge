@@ -1,0 +1,36 @@
+
+/* викдривати в браузери бо в вижуалци не працюэ*/
+li[class] {
+    font-size: 200%;
+}
+
+li[class="a"] {
+    background-color: yellow;
+}
+/* елементи які містять а в любому виді іменоа */
+li[class~="a"] {
+    color: red;
+}
+
+/* елементи починаються з y */
+li[class^="y"] {
+    font-size: 400%;
+}
+/* елементи закінчуються з y */
+li[class$="y"] {
+    background-color: yellow;
+}
+/* елементи які мають "у" в імені класу */
+li[class*="y"] {
+    color: red;
+}
+ 
+
+li[class^="r"] {
+    background-color: yellow;
+}
+/* і виключає регістр */
+li[class^="r" i] {
+    color: red;
+}
+    

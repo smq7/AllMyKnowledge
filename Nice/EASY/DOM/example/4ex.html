@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body {
+        background-color: darkblue;
+        }
+        p {
+        font-family: Arial;
+        font-size: 10pt;
+        margin-left: 0.125in;
+        }
+        #lumpy {
+        display: none;
+        }
+    </style>
+    <script>
+        const ss = document.styleSheets;
+
+    for (let i = 0; i < ss.length; i++) {
+        for (let j = 0; j < ss[i].cssRules.length; j++) {
+                for(let k = 0; k < ss[i].cssRules[j].style.length; k++){
+                    console.log(ss[i].cssRules[j].style[k]);
+                }
+            console.log(`${ss[i].cssRules[j].selectorText}\n`);
+        }
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

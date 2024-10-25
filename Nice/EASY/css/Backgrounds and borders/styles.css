@@ -1,0 +1,56 @@
+.box {
+    background-color: #567895;
+  }
+  
+  h2 {
+    background-color: black;
+    color: white;
+  }
+  span {
+    background-color: rgba(255,255,255,.5);
+  }
+
+
+
+  .box2 {
+    width: 500px;
+    height: 500px;
+    background-image: url(vadimsemen21_girl_with_a_pearl_earring_in_cyberpunk_2077_style_794c943d-9971-47d2-852d-7e23e0ee6617.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 100px right 100px ;
+  }
+
+  .a {
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(105deg, rgba(0,249,255,1) 39%, rgba(51,56,57,1) 96%);
+  }
+
+  .b {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,5,27,1) 10%, rgba(45,7,24,1) 17%, rgba(85,7,98,1) 23%, rgba(77,6,93,1) 28%, rgba(91,7,103,1) 33%, rgba(118,9,124,1) 39%, rgba(130,10,133,1) 46%, rgba(166,13,160,1) 53%, rgba(181,14,172,1) 66%, rgba(196,15,183,1) 79%, rgba(0,212,255,1) 100%);
+    background-size: 100px 50px;
+}
+
+/* 
+Другие свойства background- * также могут иметь значения, разделённые запятыми, как и background-image:
+background-image: url(image1.png), url(image2.png), url(image3.png), url(image1.png);
+background-repeat: no-repeat, repeat-x, repeat;
+background-position: 10px 20px,  top right; 
+Каждое значение различных свойств будет соответствовать значениям в той же позиции в других свойствах. Выше, например, значение background-repeat для image1 будет no-repeat.*/
+
+.box3 {
+    background-color: #567895;
+    border: 5px solid #0b385f;
+    border-bottom-style: dashed;
+    border-top-right-radius: 10% 40%;
+    color: #fff;
+  }
+  
+  h3 {
+    border-top: 2px dotted rebeccapurple;
+    border-bottom: 1em double rgb(24, 163, 78);
+  }
+      

@@ -1,0 +1,123 @@
+
+#page {
+    display: grid;
+    /* створює йменовану сітку */
+    grid-template-areas:
+    "head head"
+    "nav  main"
+    "nav  foot";
+    /* 1fr це тіпа один фрагмент*/
+    /* задаємо тіпа скільки займає місця перший рядок другий і тд... */
+    grid-template-rows: 100px 200px 50px;
+    /* задаємо тіпа скільки займає місця перша колонка друга і тд... */
+    grid-template-columns: 150px 250px;
+
+    /* це короткий синтаксис того шо в вверху написано */
+    /* grid-template:
+     "head head" 100px 
+     "nav  main" 200px 
+     "nav  foot" 50px 
+    / 150px 250px; */
+
+  }
+  
+  #page > header {
+    /* задаємо де знаходиться ітем в сітці */
+    grid-area: head;
+    background-color: #8ca0ff;
+  }
+  
+  #page > nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #ffff64;
+  }
+  
+  #page > footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+  }
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .box1 {
+    /* вказуємо початкову позицію колонки на сітці для нашого елемента  
+        колонок є на одну більше тіпа ніж ми создали бо та тіпа остання це кінець "сторінки
+    */
+    grid-column-start: 1;
+    /* вказуємо кінцеву позицію колонки на сітці для нашого елемента */
+    grid-column-end: 4;
+    /* вказуємо початкову позицію рядка на сітці для нашого елемента
+    рядків так само тіпа на один більше */
+    grid-row-start: 1;
+    /* вказуємо кінцеву позицію рядка на сітці для нашого елемента */
+    grid-row-end: 3;
+  }
+  
+  .box2 {
+    /* це тіпа то саме шо з верху но короткий синтаксис
+    перед слешом початок після кінець */
+    grid-column: 1/2;
+    grid-row: 3/5
+
+    /* це тож короткий синтаксис 
+    перше це початок рядка 
+    друге початок колонки
+    кінець рядка 
+    кінець колонки */
+    /* grid-area: 3 / 1 / 5 / 2 */
+  }
+
+  .wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+  
+  .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+  }
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+#grid {
+    width: 200px;
+    height: 400px;
+    background-color: #311b58;
+    display: grid;
+    gap: 10px;
+    /* задає розмір створеної колонки */
+    grid-auto-columns: 50px;
+    /* задає розмір створеного рядка */
+    grid-auto-rows: 100px;
+    /* як має розпологатись сітка row, column */
+    grid-auto-flow: column  dense;
+  }
+
+  #grid > div {
+    background-color: rgba(24, 167, 24, 0.5);
+  }
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+  #container {
+    display: grid;
+    grid: repeat(3, 60px) / auto-flow 80px;
+    gap: 20px;
+  }
+  
+  #container > div {
+    background-color:  #8ca0ff;
+  }
+   

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.4em;
+            font-family:   "Times New Roman", serif;
+        }
+        table{
+            border: 3px solid purple;
+            width: 500px;
+        }
+        thead th:nth-child(1) {
+            width: 50%;
+        }
+        th{
+            text-align: center;
+            border: 1px solid grey;
+        }
+        td{
+            border: 1px solid grey;
+        }
+        caption{
+            caption-side: top;
+        }
+        td[colspan]{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>A summary of the UK's most famous punk bands</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>2010</th>
+                <th>2012</th>
+                <th>2014</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th>сапфиры</th>
+                <td rowspan="2">1483</td>
+                <td>4532</td>
+                <td>6743</td>
+            </tr>
+            <tr>
+                <th>рубины</th>
+                <td>3835</td>
+                <td>7482</td>
+            </tr>
+            <tr>
+                <th>алмази</th>
+                <td>683</td>
+                <td colspan="2" >238</td>
+            </tr>
+        </tbody>
+    </table> 
+</body>
+</html>

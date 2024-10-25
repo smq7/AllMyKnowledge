@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Advanced Command" timestamp="2024-09-12T16:27:16" time="6.903" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Advanced Command"/>
+      <property name="capabilities" value="chrome.128_0_6613_137.windows"/>
+      <property name="file" value="file:///D:/LEARN/EPAM/AutomatedTesting/WebDriverIO/Finally/test/specs/advancedCommands.spec.js"/>
+    </properties>
+    <testcase classname="chrome.128_0_6613_137.windows.Advanced_Command" name="performActions command" time="6.9">
+      <system-out><![CDATA[
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/element - {"using":"css selector","value":"[data-date='1596373200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596373200000']"}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/element - {"using":"css selector","value":"[data-date='1596382200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596382200000']"}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/element/f.02D240C432EF7682CBFD86ABB38907A7.d.7FA3D489CA47077A8EC5CB1007481B7A.e.112/click - {}
+RESULT: {}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/element/f.02D240C432EF7682CBFD86ABB38907A7.d.7FA3D489CA47077A8EC5CB1007481B7A.e.113/click - {}
+RESULT: {}
+COMMAND: POST /session/394f57b8c5621ca256608c5321e2c8af/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/394f57b8c5621ca256608c5321e2c8af/actions - {}
+RESULT: {}
+COMMAND: DELETE /session/394f57b8c5621ca256608c5321e2c8af - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

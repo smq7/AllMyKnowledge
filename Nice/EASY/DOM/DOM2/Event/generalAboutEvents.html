@@ -1,0 +1,57 @@
+<!-- To define the code that will be executed when event is happen, 
+you need to register an event handler using the addEventListener() method -->
+<script>
+    // addEventListener() – register an event handler
+    // removeEventListener() – remove an event handler
+    btn.addEventListener('click', () => alert('It was clicked!'));
+    
+    // It is possible to add multiple event handlers to handle a single event, like this:
+    btn.addEventListener('click',function(event) {
+        alert(event.type); // click
+    });
+
+    btn.addEventListener('click',function(event) {
+        ('Clicked!');
+    });
+
+
+    // The removeEventListener() removes an event listener that was added via 
+    // the addEventListener(). However, you need to pass the same arguments as
+    //  were passed to the addEventListener()
+    let showAlert = () => alert('Clicked!');
+    btn.addEventListener('click', showAlert);
+    btn.removeEventListener('click', showAlert);
+
+    // Using an anonymous event listener as the following will not work:
+    btn.addEventListener('click',() => alert('Clicked!'));
+    // won't work
+    btn.removeEventListener('click',() => alert('Clicked!'))
+    ;
+</script>
+
+
+<!-- HTML event handler attributes -->
+<input type="button" value="Save" onclick="alert('Clicked!')"></input>
+
+<script>
+    function showAlert() {
+        alert('Clicked!');
+    }
+</script>
+
+<!-- The this value inside the event handler is equivalent to 
+the event’s target element: -->
+<input type="button" value="Save" onclick="showAlert(this)"></input>
+
+<!-- the event handler can access the element’s properties, for example: -->
+<input type="button" value="Save" onclick="alert(value)">
+
+<!-- DOM Level 0 event handlers -->
+<!-- Each element has event handler properties such для всіг видів подій -->
+<script>
+    let btn = document.querySelector('#btn');
+
+    btn.onclick = function() {
+    alert(this.id); 
+};
+</script>

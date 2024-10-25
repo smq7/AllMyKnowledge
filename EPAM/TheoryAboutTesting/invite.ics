@@ -1,0 +1,104 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Central European Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=EPAM AT_CEE 3_2024;SENT-BY="mailto:Iryna_Borysova1@epam.com":mai
+ lto:EPAMAT_CEE2_2024@epam.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Iryna Bory
+ sova1:mailto:Iryna_Borysova1@epam.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Ravil Yanb
+ ekov:mailto:Ravil_Yanbekov@epam.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=EPAM AT_CE
+ E 3_2024:mailto:EPAMAT_CEE2_2024@epam.com
+DESCRIPTION;LANGUAGE=en-US:\n\n\n__________________________________________
+ ______________________________________\nMicrosoft Teams Need help?<https:/
+ /aka.ms/JoinTeamsMeeting?omkt=en-GB>\nJoin the meeting now<https://teams.m
+ icrosoft.com/l/meetup-join/19%3a42c41a5f3c97443b889280791b59484d%40thread.
+ tacv2/1722802415672?context=%7b%22Tid%22%3a%22b41b72d0-4e9f-4c26-8a69-f949
+ f367c91d%22%2c%22Oid%22%3a%220048ba2c-9583-4333-adc7-7124b0c38488%22%7d>\n
+ Meeting ID: 332 935 322 227\nPasscode: c6r4xS\n___________________________
+ _____\nDial in by phone\n+48 22 161 65 31\,\,337367096#<tel:+48221616531\,
+ \,337367096#> Poland\, Warsaw\nFind a local number<https://dialin.teams.mi
+ crosoft.com/7671b355-d789-4c91-a8e7-4e25ee18fbb2?id=337367096>\nPhone conf
+ erence ID: 337 367 096#\nFor organisers: Meeting options<https://teams.mic
+ rosoft.com/meetingOptions/?organizerId=0048ba2c-9583-4333-adc7-7124b0c3848
+ 8&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d&threadId=19_42c41a5f3c9744
+ 3b889280791b59484d@thread.tacv2&messageId=1722802415672&language=en-GB> | 
+ Reset dial-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>
+ \n________________________________________________________________________
+ ________\n\n\nYou're receiving this message because you're a member of the
+  EPAM AT_CEE 3_2024 group from EPAM. To take part in this conversation\, r
+ eply all to this message.\n\nView group files<https://outlook.office365.co
+ m/owa/EPAMAT_CEE2_2024@epam.com/groupsubscription.ashx?source=EscalatedMes
+ sage&action=files&GuestId=31e97319-e8db-4681-8c2d-4ddf590b2b8b>   |   Leav
+ e group<https://outlook.office365.com/owa/EPAMAT_CEE2_2024@epam.com/groups
+ ubscription.ashx?source=EscalatedMessage&action=leave&GuestId=31e97319-e8d
+ b-4681-8c2d-4ddf590b2b8b>   |   Learn more about Microsoft 365 Groups<http
+ s://aka.ms/o365g>\n\n
+UID:040000008200E00074C5B7101A82E008000000008255E3C9AAE6DA01000000000000000
+ 0100000006247CD05B9821E48B559F44537DD241D
+SUMMARY;LANGUAGE=en-US:AT_Java Q&A#1 WebDriver (Intro + Synchronization)
+DTSTART;TZID=Central European Standard Time:20240805T160000
+DTEND;TZID=Central European Standard Time:20240805T170000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240804T201337Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2122850946
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-ONLINEMEETINGTOLLNUMBER:+48 22 161 65 31
+X-MICROSOFT-ONLINEMEETINGCONFERENCEID:337367096
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3a42c41a5f3c97443b889280791b59484d%40thread.tacv2/1722802415672?context
+ =%7b%22Tid%22%3a%22b41b72d0-4e9f-4c26-8a69-f949f367c91d%22%2c%22Oid%22%3a%
+ 220048ba2c-9583-4333-adc7-7124b0c38488%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/b41b72d0-4e9f-4c26-8a69-f949f367c91d/0048ba2c-9583-4333-adc7-7
+ 124b0c38488/19_42c41a5f3c97443b889280791b59484d@thread.tacv2/1722802415672
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:42c41a5f3c97443b889280791b59484
+ d@thread.tacv2"\,"rid":1722802415672\,"mid":1722802415672\,"uid":"8:orgid:
+ 0048ba2c-9583-4333-adc7-7124b0c38488"\,"private":false\,"type":0\,"ct":nul
+ l\,"btid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,6 @@
+повторити JS +
+DOM + 
+REACT
+mongoDB
+REST API
+GIT

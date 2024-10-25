@@ -1,0 +1,12 @@
+package task4;
+
+import bankpool.Bank;
+import bankpool.BankPool;
+
+public class main {
+	public static void main(String[] args) {
+        Bank b = new Bank(NACCOUNTS, INITIAL_BALANCE);
+        BankPool bankpool = new BankPool(1000,b);
+        bankpool.start();
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="elem">
+        <li>Привет</li>
+        <li>Мир</li>
+    </ol>
+      <script>
+        // function clear(elem) { 
+        //     let child = elem.children;
+        //     console.log(child)
+        //     for(let el of child){
+        //         console.log(el.tagName);
+        //         el.remove();
+        //     }
+
+            // Это не будет работать, потому что вызов remove() сдвигает коллекцию 
+            // elem.childNodes, поэтому элементы начинаются каждый раз с индекса 0. А i
+            //  увеличивается, и некоторые элементы будут пропущены.
+
+            // Цикл for..of делает то же самое.
+            function clear(elem) {
+            while (elem.firstChild) {
+                    elem.firstChild.remove();
+                }
+            }
+      
+        clear(elem); // очищает список
+      </script>
+</body>
+</html>

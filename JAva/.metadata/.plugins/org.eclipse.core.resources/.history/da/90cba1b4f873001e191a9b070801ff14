@@ -1,0 +1,16 @@
+package deadLock;
+
+public class Main {
+	public static void main(String[] args) {
+        final Friend a = new Friend("A");
+        final Friend b = new Friend(“B");
+        new Thread(new Runnable() {
+            public void run() { a.bow(b); }
+        }).start();
+        new Thread(new Runnable() {
+            public void run() { b.bow(a); }
+        }).start();
+    }
+}
+
+}

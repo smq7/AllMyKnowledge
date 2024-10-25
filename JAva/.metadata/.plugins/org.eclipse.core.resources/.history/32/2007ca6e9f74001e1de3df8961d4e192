@@ -1,0 +1,17 @@
+package bankpool;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class BankPool implements Runnable {
+	private final ExecutorService pool;
+	public BankPool(int poolSize) {
+		pool = Executors.newFixedThreadPool(poolSize); 
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

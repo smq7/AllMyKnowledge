@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .container{
+            display: flex;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            transform: skew(-30deg, 0);
+            background-color: grey;
+            /* background-image: linear-gradient(-60deg, transparent 2%, grey 2%, grey 98%, transparent 98%); */
+           
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+        }
+        .kostil{
+            overflow: hidden;
+        }
+        /* .container::before{
+				content: '';
+				border: 57px solid transparent;
+				border-top: 0px solid transparent;
+				border-right: 0px solid transparent;
+				border-left: 20px solid #fff;
+                position: absolute;
+                top: -20px;
+        }
+        .container::after{
+				content: '';
+				border: 57px solid transparent;
+				border-bottom: 0px solid transparent;
+				border-right: 0px solid transparent;
+				border-right: 20px solid #fff;
+				position: absolute;
+				right: 0;
+		} */
+        p, .container div{
+            margin: 30px;
+            flex: 1;
+            transform: skewX(-20deg);
+        }
+        p{
+            flex-grow: 3;
+            color: white;
+        }
+        .container div{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="kostil">
+        <div class="container">
+            <p>Рівень зарядки</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Нумерация страниц</title>
+  <style>
+    .item-list{
+        background-color: bisque;
+        border-bottom: 4px solid rgb(107, 100, 92);
+        height: 44px;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+    li{
+        margin-right: 20px;
+        font-size: 2em;
+        padding: 4.6px 20px;
+        
+    }
+    a{
+        color: rgb(102, 62, 16);
+        text-decoration: none
+    }
+    /* li.first{
+        background: #CCCCCC;
+        border-bottom: 4px solid #000000;
+    } */
+    li:hover, span:hover{
+        background: #CCCCCC;
+        border-bottom: 4px solid #000000;
+    }
+  </style>
+ </head> 
+ <body>
+  <div class="item-list">
+   <ul class="pager">
+    <li class="pager-current first"><span>1</span></li>
+    <li class="pager-item"><a href="/node?page=1" title="На страницу номер 2">2</a></li>
+    <li class="pager-item"><a href="/node?page=2" title="На страницу номер 3">3</a></li>
+    <li class="pager-item"><a href="/node?page=3" title="На страницу номер 4">4</a></li>
+    <li class="pager-next last"><a href="/node?page=1" title="На следующую страницу">›</a></li>
+   </ul>
+  </div>
+  <p>Содержание</p>
+ </body>
+</html>

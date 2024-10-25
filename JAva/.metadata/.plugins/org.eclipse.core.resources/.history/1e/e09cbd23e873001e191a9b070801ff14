@@ -1,0 +1,46 @@
+package test;
+
+import java.net.*;
+import java.util.logging.*; 
+
+
+public class test2 {
+
+	public class First extends Thread {
+	    @Override
+	    public void run(){
+	        System.out.println("tic….");
+	        try {
+	            Thread.sleep(4000);
+	        } catch (InterruptedException ex) {
+	            System.out.println("InterruptedException occured.");
+	            Logger.getLogger(SymbolSynchSleep.class.getName()).log(Level.SEVERE, null, ex);
+	        }
+	    }
+	}
+	public class Second extends Thread{
+	    private Thread thread;
+	    public Second(Thread t){
+	        this.thread = t;
+	    }
+	    
+	    @Override
+	    public void run(){
+	        try {
+	            Thread.sleep(1000);
+		  System.out.println("isInterrupted = " +thread.isInterrupted());   
+	            thread.interrupt();
+		  thread.join();
+		  System.out.println("isInterrupted = " +thread.isInterrupted());
+	        } catch (InterruptedException ex) {
+	            Logger.getLogger(Second.class.getName()).log(Level.SEVERE, null, ex);
+	        }
+	    }
+	}
+
+
+	public static void main(String[] args)  {
+		testInterrupted();
+	}
+	 
+}

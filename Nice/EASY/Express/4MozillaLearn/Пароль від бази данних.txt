@@ -1,0 +1,4 @@
+log:vadimsemen21
+pass:semenvadim21
+
+mongodb+srv://vadimsemen21:semenvadim21@cluster0.ujdcney.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0

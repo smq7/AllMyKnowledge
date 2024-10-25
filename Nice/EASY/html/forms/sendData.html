@@ -1,0 +1,33 @@
+<!-- The action attribute defines where the data gets sent. Its value must be a valid relative 
+or absolute URL. If this attribute isn't provided, the data will be sent to the URL of the
+page containing the form — the current page.
+<form action="https://example.com">…</form>
+<form action="/somewhere_else">…</form>
+The names and values of the non-file form controls are sent to the server as
+name=value pairs joined with ampersands
+
+How the data is sent depends on the method attribute. -->
+
+<!-- 
+GET
+https://mdn.github.io/learning-area/html/forms/sending-form-data/get-method.html
+
+Since the GET method has been used, you'll see the URL 
+www.foo.com/?say=Hi&to=Mom appear in the browser address bar when you submit the form.
+
+GET /?say=Hi&to=Mom HTTP/2.0
+Host: foo.com -->
+
+<!-- When the form is submitted using the POST method, you get no data appended to the URL,
+and the HTTP request looks like so, with the data included in the request body instead:
+
+POST / HTTP/2.0
+Host: foo.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+
+say=Hi&to=Mom 
+
+
+https://mdn.github.io/learning-area/html/forms/sending-form-data/get-method.html
+-->

@@ -1,0 +1,4 @@
+npm run lint - форматуєм нашу прогу ттіпа 
+
+0 Use case
+User story

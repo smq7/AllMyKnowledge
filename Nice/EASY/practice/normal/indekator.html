@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .forma{
+            background: linear-gradient(rgb(0, 0, 0) 0%, rgb(174, 174, 190) 100%);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .indekator{
+            
+            background: linear-gradient(to bottom,rgb(151, 94, 94) 0%, rgb(109, 28, 28) 100%);
+            height: 48px;
+            width: 50%;
+            border: 2px solid black;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: 4px 0px 4px yellow;
+        }
+        
+            .progress {
+            background: linear-gradient(to bottom, #333, #999); /* W3C */
+            border: 1px solid #333; /* Рамка */
+            height: 20px; /* Высота */
+            border-radius: 10px; /* Радиус скругления */
+            position: relative; /* Относительное позиционирование */
+            overflow: hidden; /*Прячем ненужную тень */
+            }
+            .progress::before{
+                content: '';
+                position: absolute; /* Абсолютное позиционирование */
+                height: 18px; width: 100px;
+                background: #5bc1fe; /* Для старых браузеров */
+                background: linear-gradient(to bottom, #5bc1fe,#018ef2 50%, #57befd); /* W3C */
+                border: 1px solid #008DF2; /* Рамка */
+                box-shadow: 3px 0 3px rgba(0,0,0,0.5); /* Тень справа */
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="forma">
+        <div class="indekator"></div>
+    </div>
+
+    <div class="progress"></div>
+</body>
+</html>

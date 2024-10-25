@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+
+  
+}
+button {
+  /* Align buttons with the text fields */
+  height: 20px;
+  
+}
+    </style>
+</head>
+
+<body>
+    <!-- A click on a submit button (the default value) sends the form's 
+    data to the web page defined by the action attribute of the <form> element.
+    A click on a reset button resets all the form widgets to their 
+    default value immediately. From a UX point of view, this is considered bad 
+    practice, so you should avoid using this type of button unless you really have 
+    a good reason to include one.
+    A click on a button button does nothing! That sounds silly, but 
+    it's amazingly useful for building custom buttons — you can define 
+    their chosen functionality with JavaScript. -->
+    <form>
+        <ul>
+            <li><button type="submit">Submit this form</button></li>
+            <li><button type="reset">Reset this form</button></li>
+            <li><button type="button">Do Nothing without JavaScript</button></li>
+            <li><input type="submit" value="Submit this form" /></li>
+            <li><input type="reset" value="Reset this form" /></li>
+            <li><input type="button" value="Do Nothing without JavaScript" /></li>
+        </ul>
+    </form>
+</body>
+</html>

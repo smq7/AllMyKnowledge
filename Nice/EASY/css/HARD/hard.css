@@ -1,0 +1,68 @@
+body{
+    color: brown;
+}
+
+p{
+    /* вертає значення до того яке написане в специфікації до стандартного */
+    color:initial;
+}
+.visibility{
+    /* ховає елемент але не міняє структуру документи  */
+    /* visibility:hidden; */
+    /* display: none; */
+    font-size: 2em;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    /* заставляє взяти пощитане значення від батьківськаого елементу */
+    color: inherit;
+}
+button{
+    visibility:show;
+    appearance: none; 
+    /* відключає стиль який задає браузер для кнопок і тд */
+}
+
+#container {
+    display: flex;
+    /* каже як браузеру розприділити простір між і вокруг ітем отанта вздовж 
+    головної осі флекс або грід контейнера*/
+    justify-content: space-between; 
+/* каже як браузеру розприділити простір між і вокруг ітем отанта вздовж 
+    не головнії осі флекс або грід контейнера*/
+    align-content: space-around
+    
+  }
+  #container > div {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg, #788cff, #b4c8ff);
+  }
+
+
+/* .backgroundClip p {
+    border: 0.8em darkviolet;
+    border-style: dotted double;
+    margin: 1em 0;
+    padding: 1.4em;
+    background: linear-gradient(60deg, red, yellow, red, yellow, red);
+    font: 900 1.2em sans-serif;
+    text-decoration: underline;
+  }
+
+.backgroundClip .border-box {
+background-clip: border-box;
+}
+.backgroundClip .padding-box {
+background-clip: padding-box;
+}
+.backgroundClip .content-box {
+background-clip: content-box;
+}
+
+.backgroundClip .text {
+background-clip: text;
+-webkit-background-clip: text;
+color: rgb(0 0 0 / 20%);
+  } */
+  

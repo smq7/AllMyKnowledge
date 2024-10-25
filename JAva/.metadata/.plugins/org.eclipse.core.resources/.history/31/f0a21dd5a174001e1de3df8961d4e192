@@ -1,0 +1,18 @@
+package bankpool;
+
+import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class BankPool implements Runnable {
+	private final ExecutorService pool;
+	private Bank bank;
+	public BankPool(int poolSize, Bank bank) {
+		pool = Executors.newFixedThreadPool(poolSize);
+		this.bank = bank;
+	}
+	@Override
+	public void run() {
+		pool.execute(bank);
+	}
+}

@@ -1,0 +1,56 @@
+<!-- innerHTML Свойство innerHTML позволяет получить HTML-содержимое элемента в виде строки.
+<body>
+  <p>Параграф</p>
+  <div>DIV</div>
+
+  <script>
+    alert( document.body.outerHTML ); // читаем текущее содержимое
+    document.body.innerHTML = 'Новый BODY!'; // заменяем содержимое
+  </script>
+
+</body> -->
+
+<!-- Свойство outerHTML содержит HTML элемента целиком. Это как innerHTML плюс сам элемент.
+    
+    <div id="elem">Привет <b>Мир</b></div>
+
+    <script>
+    alert(elem.outerHTML); // <div id="elem">Привет <b>Мир</b></div>
+    </script> -->
+
+
+<!-- Свойство innerHTML есть только у узлов-элементов.
+
+У других типов узлов, в частности, у текстовых, есть свои аналоги: 
+свойства nodeValue и data. Эти свойства очень похожи при использовании,
+ есть лишь небольшие различия 
+в спецификации. Мы будем использовать data, потому что оно короче. 
+     -->
+
+<!-- <body>
+  <p>Привет</p>
+  <div> Комментарий </div> 
+  <script>
+    let text = document.body.firstChild;
+    alert(text.data); // Привет
+
+    let comment = text.nextSibling;
+    alert(comment.data); // Комментарий
+  </script>
+</body> -->
+
+
+ <!-- Свойство textContent предоставляет доступ к тексту внутри 
+    элемента за вычетом всех <тегов>.
+
+Например:
+
+<div id="news">
+  <h1>Срочно в номер!</h1>
+  <p>Марсиане атаковали человечество!</p>
+</div>
+
+<script>
+  // Срочно в номер! Марсиане атаковали человечество!
+  alert(news.textContent);
+</script> -->

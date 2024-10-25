@@ -1,0 +1,19 @@
+package task4;
+
+import java.util.concurrent.Callable;
+
+public class CreateTask implements Callable<Double> {
+	double[] arr = new double[1000];
+	double sum ;
+	public CreateTask() {
+		this.sum = 0;
+		arr = new double[1000];
+	}
+	@Override
+	public Double call() throws Exception {
+		double sum = 0;
+		
+		return ;
+	}
+
+}

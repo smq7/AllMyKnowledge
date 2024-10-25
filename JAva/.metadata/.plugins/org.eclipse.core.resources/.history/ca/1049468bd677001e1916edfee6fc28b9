@@ -1,0 +1,17 @@
+package task4;
+
+import java.util.concurrent.ExecutorService;
+
+public class OurPool implements Runnable {
+	private final ExecutorService pool;
+	public OurPool(int poolSize) {
+		this.pool = poolSize;
+		
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

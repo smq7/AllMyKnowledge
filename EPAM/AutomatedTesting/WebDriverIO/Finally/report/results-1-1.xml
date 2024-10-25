@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Advanced Command" timestamp="2024-09-12T16:27:18" time="7.351" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Advanced Command"/>
+      <property name="capabilities" value="firefox.129_0_2.windows"/>
+      <property name="file" value="file:///D:/LEARN/EPAM/AutomatedTesting/WebDriverIO/Finally/test/specs/advancedCommands.spec.js"/>
+    </properties>
+    <testcase classname="firefox.129_0_2.windows.Advanced_Command" name="performActions command" time="7.348">
+      <system-out><![CDATA[
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element - {"using":"css selector","value":"[data-date='1596373200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596373200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element - {"using":"css selector","value":"[data-date='1596382200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596382200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/elements - {"using":"css selector","value":"[data-date='1596373200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596373200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/elements - {"using":"css selector","value":"[data-date='1596373200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596373200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element - {"using":"css selector","value":"[data-date='1596373200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596373200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element/f8846bfa-4227-4916-9608-ac5aec80c2f4/click - {}
+RESULT: {}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/elements - {"using":"css selector","value":"[data-date='1596382200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596382200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element - {"using":"css selector","value":"[data-date='1596382200000']"}
+RESULT: {"using":"css selector","value":"[data-date='1596382200000']"}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/element/ec12faaa-be0d-4f82-b40f-8fbb055653ba/click - {}
+RESULT: {}
+COMMAND: POST /session/86388346-1221-45ac-ab4e-9a0a24b2533e/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/86388346-1221-45ac-ab4e-9a0a24b2533e/actions - {}
+RESULT: {}
+COMMAND: DELETE /session/86388346-1221-45ac-ab4e-9a0a24b2533e - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

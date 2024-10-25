@@ -1,0 +1,22 @@
+package url;
+
+import java.io.*;
+import java.net.URL;
+
+public class UrlReader {
+    public static void main(String[] args) throws Exception {
+
+        URL oracle = new URL("http://www.oracle.com/");
+        
+        BufferedReader in =
+        	  new BufferedReader(new InputStreamReader(oracle.openStream()));
+
+        String inputLine;
+        System.out.println("WUT");
+        while ((inputLine = in.readLine()) != null)
+        	
+        	System.out.println(inputLine);
+        in.close();
+    }
+}
+

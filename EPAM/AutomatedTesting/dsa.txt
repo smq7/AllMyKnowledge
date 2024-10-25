@@ -1,0 +1,6 @@
+Eslint
+chai
+mocha 
+Wdio
+
+c8 - coverage

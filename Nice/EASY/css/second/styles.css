@@ -1,0 +1,60 @@
+/* В языке CSS есть правила, которые определяют, какое правило "выиграет" в
+ случае подобного столкновения — они называются каскадами, или спецификациями
+ . В примере ниже мы задали два правила для селектора p, но в итоге текст будет
+  синим: объявление, делающее надпись синей, появилось позже того, которое делает
+   её красной. Это каскад в действии.
+А в примере с селектором класса и селектором тега победит селектор класса 
+— даже если он объявлен раньше. */
+@import 'styles2.css';
+body {
+  background-color: pink;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: rgb(100, 100, 177);
+  }
+}
+
+p {
+    color: red;
+  }
+
+.class {
+  color: rgb(27, 15, 15); 
+}
+p {
+   color:rgb(42, 109, 168);
+   font-size: 11ch;
+   
+}
+
+div{
+  background-color: aqua;
+}
+
+.outer {
+  border: 5px solid black;
+}
+
+.box {
+  padding: 10px;
+  width: calc(90% - 30px);
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.box2 {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn)
+}
+
+.box3{
+  width: 1000px;
+  height: 1000px;
+  padding: 10px 15px 15px 5px;
+  background: red url(pngegg.png) 10px 10px repeat-x fixed;
+}

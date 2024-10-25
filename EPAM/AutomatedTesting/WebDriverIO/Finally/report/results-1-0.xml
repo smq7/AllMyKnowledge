@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Basic Command test" timestamp="2024-09-12T16:27:03" time="10.872" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Basic Command test"/>
+      <property name="capabilities" value="firefox.129_0_2.windows"/>
+      <property name="file" value="file:///D:/LEARN/EPAM/AutomatedTesting/WebDriverIO/Finally/test/specs/basicCommands.spec.js"/>
+    </properties>
+    <testcase classname="firefox.129_0_2.windows.Basic_Command_test" name="waitForExist command" time="10.869">
+      <failure message="element (&quot;#Name input&quot;) still not existing after 10000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/element - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: POST /session/3315cfbb-6803-428c-997e-15d25c828764/elements - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: GET /session/3315cfbb-6803-428c-997e-15d25c828764/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/3315cfbb-6803-428c-997e-15d25c828764 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("#Name input") still not existing after 10000ms
+    at async Context.<anonymous> (D:\LEARN\EPAM\AutomatedTesting\WebDriverIO\Finally\test\specs\basicCommands.spec.js:83:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

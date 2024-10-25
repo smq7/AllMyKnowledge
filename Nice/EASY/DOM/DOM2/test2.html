@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Focus Events</title>
+</head>
+<body>
+    <p>Move focus to the password field to see the effect:</p>
+
+    <form id="form">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+    </form>
+
+    <script>
+        window.addEventListener('hashchange',() => {
+            console.log("HASH : ")
+    console.log(`The current URL hash is ${location.hash}`);
+});
+
+    </script>
+</body>
+</html>
